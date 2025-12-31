@@ -1,28 +1,28 @@
 class CodexMarketAt01 < Formula
   desc "CLI tool to manage Claude marketplace plugins for Codex"
   homepage "https://github.com/egoavara/codex-marketplace"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.3/codex-market-v0.1.3-darwin-amd64"
-      sha256 "e8d6e489e31f6ac6e7348efd97aa4d8e739f4a38177d96a0726cfcd59780479b"
+      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.4/codex-market-v0.1.4-darwin-amd64"
+      sha256 "37fb76ccc2b91e40a854473a03f06533c72c788fa35ba7b8a8593a0caa1e8f01"
     end
     on_arm do
-      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.3/codex-market-v0.1.3-darwin-arm64"
-      sha256 "14f89e72aa69b0949cc832ea0818536f0ee6745ac5f4f6c0a445ccd62e12c373"
+      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.4/codex-market-v0.1.4-darwin-arm64"
+      sha256 "dcf015058d0d2f8770615ebbe9b70bac6015edfa59e212753e850038af1aad41"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.3/codex-market-v0.1.3-linux-amd64"
-      sha256 "e88a33348c0623a421bb11c8c38b9bf9060ba27e971a6d4f7948b4a53d4c769c"
+      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.4/codex-market-v0.1.4-linux-amd64"
+      sha256 "9b2a727284d5d1315fccc11b27f01b3d6db4288c1481be8a3a68a2c0b6f21d64"
     end
     on_arm do
-      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.3/codex-market-v0.1.3-linux-arm64"
-      sha256 "aa260cc13cb52b1542914a17f7fd8e6917dd1411cada36e2c776cc933ae65b4b"
+      url "https://github.com/egoavara/codex-marketplace/releases/download/v0.1.4/codex-market-v0.1.4-linux-arm64"
+      sha256 "481cea823ea501b5e2f869f8dc72719fbc7cc46d28b2d1089f033b7ff7389da3"
     end
   end
 
@@ -39,6 +39,6 @@ class CodexMarketAt01 < Formula
   end
 
   test do
-    assert_match "0.1.3", shell_output("#{bin}/codex-market version")
+    assert_match "0.1.4", shell_output("#{bin}/codex-market version")
   end
 end
